@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RobSL Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #0779e4 3px solid;
+    }
+    header a, footer a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    header ul {
+      padding: 0;
+      list-style: none;
+    }
+    header ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 30px;
+    }
+    section {
+      padding: 20px;
+      background: #fff;
+      margin-top: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>RobSL Documentation</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#home-page">Home Page</a></li>
+          <li><a href="#robsl-page">RobSL Page</a></li>
+          <li><a href="#annotation-page">Annotation Page</a></li>
+          <li><a href="#visualization-page">Visualization Page</a></li>
+          <li><a href="#drug-network-page">Drug Network Page</a></li>
+          <li><a href="#getting-started">Getting Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to RobSL, your comprehensive tool for exploring synthetic lethality in cancer research. RobSL integrates large-scale functional loss data from cancer cell lines with multi-omics data, enabling the identification of robust synthetic lethal gene pairs. This guide will help you navigate and utilize RobSL effectively.</p>
+    </section>
+
+    <section id="home-page">
+      <h2>Home Page</h2>
+      <p>The Home page provides an overview of RobSL and its capabilities in cancer research. It also includes a step-by-step usage guide and displays dataset metrics.</p>
+    </section>
+
+    <section id="robsl-page">
+      <h2>RobSL Page</h2>
+      <p>On the RobSL page, you can select the cancer type and driver gene for analysis. You can input candidate genes manually, upload a file, select from KEGG pathways, or choose all common genes in the dataset. Additionally, you can apply filters based on gene expression, copy number variation, and mutations.</p>
+    </section>
+
+    <section id="annotation-page">
+      <h2>Annotation Page</h2>
+      <p>The Annotation page allows you to submit the final result file generated from the RobSL page for annotation. The annotated file will include data from known databases, protein interaction networks, and drug response data.</p>
+    </section>
+
+    <section id="visualization-page">
+      <h2>Visualization Page</h2>
+      <p>The Visualization page enables you to upload the annotated result file and explore the results using various visualizations such as scatter plots and PPI networks.</p>
+    </section>
+
+    <section id="drug-network-page">
+      <h2>Synthetic Lethality - Drug Network Page</h2>
+      <p>On this page, you can upload the annotated result file with drug data and construct a synthetic lethality-drug network. This helps in discovering potential therapeutic strategies.</p>
+    </section>
+
+    <section id="getting-started">
+      <h2>Getting Started</h2>
+      <p>
+        <strong>Install Dependencies:</strong> Ensure you have the required Python packages installed. Use the following command:
+        <pre><code>pip install streamlit pandas numpy matplotlib seaborn networkx scipy base64 re tqdm</code></pre>
+      </p>
+      <p>
+        <strong>Run the Application:</strong> Navigate to the directory containing the RobSL scripts and run the application using:
+        <pre><code>streamlit run Home.py</code></pre>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 RobSL Documentation. All rights reserved.</p>
+  </footer>
+</body>
+</html>
